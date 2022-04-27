@@ -1,0 +1,40 @@
+<div class="sale1">
+  <h4 mat-dialog-title>Receipt</h4>
+</div>
+<div mat-dialog-content>
+  <p class="para1">Sale No: ..101</p>
+  <p>Date: 01-18-2018 12:03:03</p>
+  <div class="table">
+    <table style="width: 100%">
+      <tr>
+        <th>#</th>
+        <th>products</th>
+        <th>Quantity</th>
+        <th>Sub Total</th>
+      </tr>
+      <tr *ngFor="let data of receiptData.tableData; let i = index">
+        <td>{{i+1}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.quantity}}</td>
+        <td>{{data.total}} INR</td>
+      </tr>
+      <tr>
+        <td>Total Items</td>
+        <td>{{receiptData.quantity}}</td>
+        <td>Total</td>
+        <th>{{receiptData.total}} INR</th>
+      </tr>
+      <tr>
+        <td class="right">Discount</td>
+        <th class="right">{{receiptData.discount}}%</th>
+      </tr>
+      <tr>
+        <td class="right">VAT</td>
+        <th class="right">{{receiptData.vat}}%</th>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="btn">
+  <button (click)="onCancel(true)" mat-button>Close</button>
+</div>

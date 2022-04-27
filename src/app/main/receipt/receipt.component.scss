@@ -1,0 +1,30 @@
+.sale1 {
+  background-color: black;
+  height: 35px;
+}
+.sale1 h4 {
+  color: white;
+  text-align: center;
+  height: 35px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.para1 {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.table {
+  width: 100%;
+}
+.table th tr {
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.btn button {
+  width: 100%;
+  background-color: lightgrey;
+}
